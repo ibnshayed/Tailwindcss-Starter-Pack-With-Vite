@@ -38,10 +38,10 @@ npx tailwind init -p
 # tailwind.config.js
 
 ```javascript
-'module.exports' = {
-  'mode': 'jit',
-  'purge': '["./**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"]',
-  'plugins': '[require("daisyui")]',
+module.exports = {
+  mode: "jit",
+  purge: ["./**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
+  plugins: [require("daisyui")],
 }
 ```
 
@@ -53,4 +53,28 @@ npx tailwind init -p
     "build": "vite build",
     "serve": "vite preview"
   },
+```
+
+# vite.config.js
+
+```javascript
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: '/Tailwindcss-Starter-Pack-With-Vite/' // '/<REPO_NAME>/'
+})
+```
+
+# Deploy to GitHub Pages
+
+```javascript
+
+$npm run build
+
+$git add dist -f // remove dist folder from .gitignore file
+
+$git commit -m 'dist folder added'
+
+$git subtree push --prefix dist origin gh-pages // adding a branch gh-pages and deploy
+
 ```
