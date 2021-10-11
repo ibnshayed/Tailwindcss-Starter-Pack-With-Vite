@@ -48,11 +48,11 @@ module.exports = {
 # package.json
 
 ```javascript
-"scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
+ "scripts": {
+    "dev": "vite", // start dev server
+    "build": "vite build", // build for production
+    "serve": "vite preview" // locally preview production build
+  }
 ```
 
 # vite.config.js
