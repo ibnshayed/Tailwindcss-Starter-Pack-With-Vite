@@ -23,9 +23,11 @@ yarn dev
 ## **How to Create this**
 
 ```
-npm init -y or yarn init -y
+npm init -y 
 npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite@latest postcss-import@latest daisyui@latest
+
 or
+yarn init -y
 yarn add -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite@latest postcss-import@latest daisyui@latest
 ```
 
