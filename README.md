@@ -66,9 +66,12 @@ module.exports = {
 ```
 
 # css/tailwind.css
+```javascript
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+```
+
 
 # package.json
 
