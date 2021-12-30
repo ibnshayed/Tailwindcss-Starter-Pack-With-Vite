@@ -13,20 +13,23 @@ git clone https://github.com/ibnshayed/Tailwindcss-Starter-Pack-With-Vite.git
 ```
 npm i
 npm run dev
+
 or
+
 yarn
 yarn dev
 ```
 
 ### **Start: On VS Code any live server**
 
-## **How to Create this**
+## **How to Create this from scratch**
 
 ```
 npm init -y 
 npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite@latest postcss-import@latest daisyui@latest
 
 or
+
 yarn init -y
 yarn add -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite@latest postcss-import@latest daisyui@latest
 ```
