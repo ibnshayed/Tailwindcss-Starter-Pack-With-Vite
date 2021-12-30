@@ -94,7 +94,10 @@ module.exports = {
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/Tailwindcss-Starter-Pack-With-Vite/' // '/<REPO_NAME>/'
+  base: '/Tailwindcss-Starter-Pack-With-Vite/', // '/<REPO_NAME>/'
+	server: {
+		port: 4000
+	}
 })
 ```
 
