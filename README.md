@@ -11,7 +11,11 @@ git clone https://github.com/ibnshayed/Tailwindcss-Starter-Pack-With-Vite.git
 ### **TailwindCss Build For Development:**
 
 ```
+npm i
 npm run dev
+or
+yarn
+yarn dev
 ```
 
 ### **Start: On VS Code any live server**
@@ -19,8 +23,10 @@ npm run dev
 ## **How to Create this**
 
 ```
-npm init -y
-npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite
+npm init -y or yarn init -y
+npm install -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite@latest postcss-import@latest daisyui@latest
+or
+yarn add -D tailwindcss@latest postcss-cli@latest autoprefixer@latest vite@latest postcss-import@latest daisyui@latest
 ```
 
 ### Tailwind Full Config
@@ -44,6 +50,25 @@ module.exports = {
   plugins: [require("daisyui")],
 }
 ```
+
+# postcss.config.js
+
+```javascript
+module.exports = {
+  plugins: {
+		"postcss-import": {},
+		'tailwindcss/nesting': {},
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+
+```
+
+# css/tailwind.css
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 # package.json
 
